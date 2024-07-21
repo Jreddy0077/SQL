@@ -26,7 +26,7 @@ try:
     # Perform query
 
     # Perform query
-    df = pd.read_sql('SELECT * FROM user', conn)
+    df = pd.read_sql('SELECT * FROM users', conn)
 
     # Ensure 'number' column is treated as a string
     df['number'] = df['number'].astype(str)
