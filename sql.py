@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 from sqlalchemy import create_engine
+import pymysql  
 
 # Define the connection parameters for TiDB Cloud
 db_user = "2yasPb2k6DKrXZH.root"
