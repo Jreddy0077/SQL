@@ -3,10 +3,10 @@
 import streamlit as st
 
 # Initialize connection.
-conn = st.connection('tidb', type='sql')
+conn = st.connection('test', type='sql')
 
 # Perform query.
-df = conn.query('SELECT * from mytable;', ttl=600)
+df = conn.query('SELECT * from user;', ttl=600)
 
 # Print results.
 for row in df.itertuples():
