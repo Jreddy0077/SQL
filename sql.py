@@ -39,6 +39,7 @@ try:
 
     # Close the engine
     engine.dispose()
+    
 
 except SQLAlchemyError as e:
     st.error(f"An error occurred: {str(e)}")
