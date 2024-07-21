@@ -24,7 +24,7 @@ try:
     conn = engine.connect()
 
     # Perform query
-    df = pd.read_sql('SELECT * FROM user', conn)
+    df = pd.read_sql('SELECT * FROM users', conn)
 
     # Close connection
     conn.close()
