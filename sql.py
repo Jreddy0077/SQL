@@ -29,9 +29,7 @@ try:
     # Close connection
     conn.close()
 
-    # Print results
-    for row in df.itertuples():
-        st.write(f"{row.name} has a :{row.pet}:")
+    st.write(df)
 
     # Close the engine
     engine.dispose()
