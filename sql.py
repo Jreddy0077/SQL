@@ -24,7 +24,8 @@ try:
     conn = engine.connect()
 
     # Perform query
-    df = pd.read_sql('SELECT * FROM users', conn)
+    result=('SELECT number FROM users', conn)
+    st.write(result)
 
     # Close connection
     conn.close()
