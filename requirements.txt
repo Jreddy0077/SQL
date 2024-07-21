@@ -1,2 +1,4 @@
-mysqlclient
-SQLAlchemy
+streamlit
+pandas
+pymysql
+sqlalchemy
