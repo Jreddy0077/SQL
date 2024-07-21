@@ -24,11 +24,17 @@ try:
     conn = engine.connect()
 
     # Perform query
-    result=('SELECT number FROM users', conn)
-    st.write(result)
+
+    # Perform query
+    df = pd.read_sql('SELECT * FROM user', conn)
+
+    # Ensure 'number' column is treated as a string
+    df['number'] = df['number'].astype(str)
+
 
     # Close connection
     conn.close()
+    st.write(df)
 
 
     # Close the engine
