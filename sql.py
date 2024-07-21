@@ -30,7 +30,6 @@ try:
     # Close connection
     conn.close()
 
-    st.write(df)
 
     # Close the engine
     engine.dispose()
